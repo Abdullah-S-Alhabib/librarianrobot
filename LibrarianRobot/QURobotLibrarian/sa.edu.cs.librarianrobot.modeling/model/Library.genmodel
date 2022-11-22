@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/sa.edu.cs.librarianrobot.modeling/src" modelPluginID="sa.edu.cs.librarianrobot.modeling"
+    modelName="Library" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>Library.ecore</foreignModel>
+  <genPackages prefix="Librarypackage" basePackage="sa.edu.cs.librarianrobot.modeling"
+      disposableProviderFactory="true" contentTypeIdentifier="" ecorePackage="Library.ecore#/"
+      publicationLocation="">
+    <genClasses ecoreClass="Library.ecore#//Library">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Library.ecore#//Library/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Library.ecore#//Library/resources"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Library.ecore#//Publication"/>
+    <genClasses ecoreClass="Library.ecore#//Book">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Library.ecore#//Book/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Library.ecore#//Book/authors"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Library.ecore#//Book/xCoordinate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Library.ecore#//Book/yCoordinate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Library.ecore#//Book/weight"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

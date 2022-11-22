@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ASCII"?>
+<_librarypackage:Library xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:_librarypackage="sa.edu.cs.librarianrobot.librarymodel" name="library">
+  <resources xsi:type="_librarypackage:Book" title="Boubou, southern" authors="Hetty Bailey" xCoordinate="917" yCoordinate="976" weight="568"/>
+  <resources xsi:type="_librarypackage:Book" title="Genet, small-spotted" authors="Cicely Gilloran" xCoordinate="518" yCoordinate="147" weight="277"/>
+  <resources xsi:type="_librarypackage:Book" title="Hornbill, southern ground" authors="Palm Hartlebury" xCoordinate="487" yCoordinate="700" weight="723"/>
+  <resources xsi:type="_librarypackage:Book" title="Feathertail glider" authors="Abbye Carus" xCoordinate="292" yCoordinate="210" weight="53"/>
+  <resources xsi:type="_librarypackage:Book" title="Fisher" authors="Josselyn Heinecke" xCoordinate="88" yCoordinate="839" weight="301"/>
+  <resources xsi:type="_librarypackage:Book" title="Hen, sage" authors="Tricia Roddell" xCoordinate="965" yCoordinate="490" weight="269"/>
+  <resources xsi:type="_librarypackage:Book" title="Lemur, brown" authors="Auroora Moulson" xCoordinate="797" yCoordinate="564" weight="498"/>
+  <resources xsi:type="_librarypackage:Book" title="Crab-eating fox" authors="Ruthanne Bartolomeoni" xCoordinate="892" yCoordinate="160" weight="425"/>
+  <resources xsi:type="_librarypackage:Book" title="Eagle, bald" authors="Anatollo Blacker" xCoordinate="670" yCoordinate="210" weight="518"/>
+  <resources xsi:type="_librarypackage:Book" title="Richardson's ground squirrel" authors="Valaree Milstead" xCoordinate="65" yCoordinate="342" weight="448"/>
+  <resources xsi:type="_librarypackage:Book" title="Potoroo" authors="Connie Piken" xCoordinate="17" yCoordinate="578" weight="601"/>
+  <resources xsi:type="_librarypackage:Book" title="Pigeon, feral rock" authors="Basilius Mummery" xCoordinate="740" yCoordinate="813" weight="451"/>
+  <resources xsi:type="_librarypackage:Book" title="Crane, sarus" authors="Ricardo Piken" xCoordinate="597" yCoordinate="582" weight="373"/>
+  <resources xsi:type="_librarypackage:Book" title="Vulture, king" authors="Cristian Adao" xCoordinate="243" yCoordinate="652" weight="397"/>
+  <resources xsi:type="_librarypackage:Book" title="African jacana" authors="Cris Allabarton" xCoordinate="463" yCoordinate="892" weight="98"/>
+  <resources xsi:type="_librarypackage:Book" title="Paddy heron (unidentified)" authors="Kylie Callcott" xCoordinate="98" yCoordinate="542" weight="263"/>
+  <resources xsi:type="_librarypackage:Book" title="Rattlesnake, eastern diamondback" authors="Emmy Polet" xCoordinate="605" yCoordinate="556" weight="412"/>
+  <resources xsi:type="_librarypackage:Book" title="Jaguarundi" authors="Sergeant Sherrington" xCoordinate="422" yCoordinate="576" weight="80"/>
+  <resources xsi:type="_librarypackage:Book" title="White spoonbill" authors="Elisabeth Brentnall" xCoordinate="799" yCoordinate="810" weight="328"/>
+  <resources xsi:type="_librarypackage:Book" title="Iguana, land" authors="Starlene Eldon" xCoordinate="720" yCoordinate="975" weight="604"/>
+  <resources xsi:type="_librarypackage:Book" title="Gull, southern black-backed" authors="Colene Bevan" xCoordinate="775" yCoordinate="40" weight="288"/>
+  <resources xsi:type="_librarypackage:Book" title="Dove, mourning collared" authors="Marve Housecraft" xCoordinate="780" yCoordinate="152" weight="598"/>
+  <resources xsi:type="_librarypackage:Book" title="Sockeye salmon" authors="Terrell Alejo" xCoordinate="340" yCoordinate="31" weight="536"/>
+  <resources xsi:type="_librarypackage:Book" title="Asiatic jackal" authors="Bethena Harrell" xCoordinate="833" yCoordinate="425" weight="158"/>
+  <resources xsi:type="_librarypackage:Book" title="Red-capped cardinal" authors="Conchita Piotr" xCoordinate="945" yCoordinate="465" weight="495"/>
+  <resources xsi:type="_librarypackage:Book" title="Macaque, rhesus" authors="Rosabella Culham" xCoordinate="923" yCoordinate="851" weight="157"/>
+  <resources xsi:type="_librarypackage:Book" title="Common mynah" authors="Giorgi Olivie" xCoordinate="706" yCoordinate="412" weight="484"/>
+  <resources xsi:type="_librarypackage:Book" title="Golden eagle" authors="Aloysia Milesap" xCoordinate="411" yCoordinate="163" weight="481"/>
+  <resources xsi:type="_librarypackage:Book" title="Eastern indigo snake" authors="Nicol Gentil" xCoordinate="689" yCoordinate="353" weight="274"/>
+  <resources xsi:type="_librarypackage:Book" title="Cat, civet" authors="Bambie Locker" xCoordinate="294" yCoordinate="901" weight="750"/>
+  <resources xsi:type="_librarypackage:Book" title="Field flicker" authors="Roger Birkenshaw" xCoordinate="505" yCoordinate="136" weight="559"/>
+  <resources xsi:type="_librarypackage:Book" title="Black-tailed tree creeper" authors="Viola Miche" xCoordinate="864" yCoordinate="445" weight="732"/>
+  <resources xsi:type="_librarypackage:Book" title="Cow, scottish highland" authors="Pammie De Gouy" xCoordinate="584" yCoordinate="556" weight="189"/>
+  <resources xsi:type="_librarypackage:Book" title="Hawk-eagle, crowned" authors="Calypso Alexandre" xCoordinate="193" yCoordinate="8" weight="439"/>
+  <resources xsi:type="_librarypackage:Book" title="Deer, black-tailed" authors="Salaidh Shrimpton" xCoordinate="942" yCoordinate="923" weight="789"/>
+  <resources xsi:type="_librarypackage:Book" title="Bald eagle" authors="Tabitha O'Dougherty" xCoordinate="680" yCoordinate="777" weight="618"/>
+  <resources xsi:type="_librarypackage:Book" title="Macaw, red and blue" authors="Jacquenetta Grennan" xCoordinate="895" yCoordinate="60" weight="478"/>
+  <resources xsi:type="_librarypackage:Book" title="Giraffe" authors="Izaak Akester" xCoordinate="662" yCoordinate="675" weight="313"/>
+  <resources xsi:type="_librarypackage:Book" title="Penguin, galapagos" authors="Herminia Goodisson" xCoordinate="598" yCoordinate="653" weight="533"/>
+  <resources xsi:type="_librarypackage:Book" title="Gull, silver" authors="Mylo Freathy" xCoordinate="719" yCoordinate="98" weight="400"/>
+  <resources xsi:type="_librarypackage:Book" title="Bare-faced go away bird" authors="Sarita Dufaire" xCoordinate="440" yCoordinate="144" weight="531"/>
+  <resources xsi:type="_librarypackage:Book" title="Jackal, black-backed" authors="Wilmer Drogan" xCoordinate="746" yCoordinate="776" weight="688"/>
+  <resources xsi:type="_librarypackage:Book" title="Western spotted skunk" authors="Amery Suett" xCoordinate="262" yCoordinate="950" weight="428"/>
+  <resources xsi:type="_librarypackage:Book" title="Black-capped chickadee" authors="Sigismund MacPhail" xCoordinate="960" yCoordinate="759" weight="541"/>
+  <resources xsi:type="_librarypackage:Book" title="Silver-backed fox" authors="Guntar McClaughlin" xCoordinate="429" yCoordinate="590" weight="52"/>
+  <resources xsi:type="_librarypackage:Book" title="Crested porcupine" authors="Cassie Audibert" xCoordinate="613" yCoordinate="277" weight="576"/>
+  <resources xsi:type="_librarypackage:Book" title="Dingo" authors="Andee Sapauton" xCoordinate="284" yCoordinate="74" weight="90"/>
+  <resources xsi:type="_librarypackage:Book" title="Fat-tailed dunnart" authors="Martina Djordjevic" xCoordinate="521" yCoordinate="181" weight="690"/>
+  <resources xsi:type="_librarypackage:Book" title="Caracal" authors="Nataniel Karlicek" xCoordinate="1000" yCoordinate="368" weight="437"/>
+  <resources xsi:type="_librarypackage:Book" title="Common wolf" authors="Efrem Stannett" xCoordinate="147" yCoordinate="805" weight="285"/>
+  <resources xsi:type="_librarypackage:Book" title="Nelson ground squirrel" authors="Jeane McVaugh" xCoordinate="541" yCoordinate="870" weight="782"/>
+  <resources xsi:type="_librarypackage:Book" title="Andean goose" authors="Erinna Goozee" xCoordinate="766" yCoordinate="2" weight="570"/>
+  <resources xsi:type="_librarypackage:Book" title="Egyptian vulture" authors="Chan Aitkin" xCoordinate="73" yCoordinate="532" weight="747"/>
+  <resources xsi:type="_librarypackage:Book" title="Violet-crested turaco" authors="Ely Osmar" xCoordinate="731" yCoordinate="506" weight="378"/>
+  <resources xsi:type="_librarypackage:Book" title="Lion, south american sea" authors="Robinetta Andreasson" xCoordinate="650" yCoordinate="206" weight="364"/>
+  <resources xsi:type="_librarypackage:Book" title="Snowy sheathbill" authors="Enrique Linkin" xCoordinate="492" yCoordinate="718" weight="115"/>
+  <resources xsi:type="_librarypackage:Book" title="Swamp deer" authors="Tristan Siggery" xCoordinate="603" yCoordinate="474" weight="733"/>
+  <resources xsi:type="_librarypackage:Book" title="Eastern dwarf mongoose" authors="Annora Fomichkin" xCoordinate="47" yCoordinate="370" weight="251"/>
+  <resources xsi:type="_librarypackage:Book" title="Red hartebeest" authors="Tyrone Bickerdyke" xCoordinate="538" yCoordinate="595" weight="575"/>
+  <resources xsi:type="_librarypackage:Book" title="Black spider monkey" authors="Solomon Caffery" xCoordinate="243" yCoordinate="633" weight="53"/>
+  <resources xsi:type="_librarypackage:Book" title="Squirrel, eurasian red" authors="Tobias McIndrew" xCoordinate="628" yCoordinate="118" weight="693"/>
+  <resources xsi:type="_librarypackage:Book" title="Turtle (unidentified)" authors="Denny Whyte" xCoordinate="8" yCoordinate="973" weight="649"/>
+  <resources xsi:type="_librarypackage:Book" title="Fox, bat-eared" authors="Fabiano Eliesco" xCoordinate="114" yCoordinate="981" weight="765"/>
+  <resources xsi:type="_librarypackage:Book" title="Goldeneye, barrows" authors="Amelia Plomer" xCoordinate="725" yCoordinate="147" weight="464"/>
+  <resources xsi:type="_librarypackage:Book" title="Nilgai" authors="Marget O'Gleasane" xCoordinate="958" yCoordinate="778" weight="641"/>
+  <resources xsi:type="_librarypackage:Book" title="Yellow-billed hornbill" authors="Elita Scheffler" xCoordinate="489" yCoordinate="946" weight="418"/>
+  <resources xsi:type="_librarypackage:Book" title="Common boubou shrike" authors="Donielle MacLaughlin" xCoordinate="728" yCoordinate="400" weight="173"/>
+  <resources xsi:type="_librarypackage:Book" title="Lourie, grey" authors="Nert Robertsson" xCoordinate="993" yCoordinate="274" weight="574"/>
+  <resources xsi:type="_librarypackage:Book" title="Superb starling" authors="Sissie Broadbent" xCoordinate="557" yCoordinate="410" weight="375"/>
+  <resources xsi:type="_librarypackage:Book" title="Loris, slender" authors="Mickey Sackett" xCoordinate="707" yCoordinate="64" weight="66"/>
+  <resources xsi:type="_librarypackage:Book" title="Deer, red" authors="Fred Arangy" xCoordinate="652" yCoordinate="256" weight="135"/>
+  <resources xsi:type="_librarypackage:Book" title="Tiger" authors="Vanda Pesek" xCoordinate="881" yCoordinate="697" weight="631"/>
+  <resources xsi:type="_librarypackage:Book" title="Black-cheeked waxbill" authors="Orelle Galiero" xCoordinate="66" yCoordinate="585" weight="704"/>
+  <resources xsi:type="_librarypackage:Book" title="Purple moorhen" authors="Stesha Stucke" xCoordinate="790" yCoordinate="137" weight="93"/>
+  <resources xsi:type="_librarypackage:Book" title="European shelduck" authors="Lizzy Mower" xCoordinate="225" yCoordinate="894" weight="175"/>
+  <resources xsi:type="_librarypackage:Book" title="Starling, red-shouldered glossy" authors="Addy Schubbert" xCoordinate="544" yCoordinate="994" weight="565"/>
+  <resources xsi:type="_librarypackage:Book" title="Two-banded monitor" authors="Cahra Card" xCoordinate="198" yCoordinate="652" weight="501"/>
+  <resources xsi:type="_librarypackage:Book" title="Seal, northern fur" authors="Jonah Loxly" xCoordinate="769" yCoordinate="806" weight="657"/>
+  <resources xsi:type="_librarypackage:Book" title="Sheep, stone" authors="Johnnie Jimpson" xCoordinate="350" yCoordinate="973" weight="337"/>
+  <resources xsi:type="_librarypackage:Book" title="Tarantula" authors="Brena Juarez" xCoordinate="252" yCoordinate="658" weight="651"/>
+  <resources xsi:type="_librarypackage:Book" title="Macaque, pig-tailed" authors="Kenny Bickerstaffe" xCoordinate="37" yCoordinate="850" weight="540"/>
+  <resources xsi:type="_librarypackage:Book" title="Mynah, common" authors="Bethena Bricknall" xCoordinate="104" yCoordinate="899" weight="65"/>
+  <resources xsi:type="_librarypackage:Book" title="Mountain goat" authors="Pate Yuranovev" xCoordinate="417" yCoordinate="859" weight="560"/>
+  <resources xsi:type="_librarypackage:Book" title="Tortoise, indian star" authors="Tobit Sherrock" xCoordinate="741" yCoordinate="170" weight="432"/>
+  <resources xsi:type="_librarypackage:Book" title="Tortoise, asian foreset" authors="Tobey Rosson" xCoordinate="452" yCoordinate="584" weight="129"/>
+  <resources xsi:type="_librarypackage:Book" title="Hornbill, southern ground" authors="Bayard Acton" xCoordinate="231" yCoordinate="986" weight="209"/>
+  <resources xsi:type="_librarypackage:Book" title="Stork, openbill" authors="Nobie Chettle" xCoordinate="767" yCoordinate="843" weight="65"/>
+  <resources xsi:type="_librarypackage:Book" title="Crane, stanley" authors="Florencia Davenall" xCoordinate="905" yCoordinate="358" weight="311"/>
+  <resources xsi:type="_librarypackage:Book" title="White-headed vulture" authors="Giselbert Menlove" xCoordinate="157" yCoordinate="605" weight="226"/>
+  <resources xsi:type="_librarypackage:Book" title="White-necked raven" authors="Klemens Meldrum" xCoordinate="234" yCoordinate="439" weight="708"/>
+  <resources xsi:type="_librarypackage:Book" title="Currasow (unidentified)" authors="Robers Gaskin" xCoordinate="38" yCoordinate="587" weight="669"/>
+  <resources xsi:type="_librarypackage:Book" title="Horned lark" authors="Sidnee Lardnar" xCoordinate="403" yCoordinate="999" weight="670"/>
+  <resources xsi:type="_librarypackage:Book" title="Giant armadillo" authors="Ethyl Pinsent" xCoordinate="873" yCoordinate="560" weight="737"/>
+  <resources xsi:type="_librarypackage:Book" title="Vulture, oriental white-backed" authors="Melinde Assandri" xCoordinate="635" yCoordinate="313" weight="212"/>
+  <resources xsi:type="_librarypackage:Book" title="Jackal, silver-backed" authors="Lebbie Mayoral" xCoordinate="139" yCoordinate="747" weight="384"/>
+  <resources xsi:type="_librarypackage:Book" title="Springbuck" authors="Orran Lamboll" xCoordinate="627" yCoordinate="44" weight="678"/>
+  <resources xsi:type="_librarypackage:Book" title="Anaconda (unidentified)" authors="Marrilee Bawdon" xCoordinate="790" yCoordinate="435" weight="798"/>
+  <resources xsi:type="_librarypackage:Book" title="Whale, killer" authors="Granthem Simenel" xCoordinate="862" yCoordinate="320" weight="134"/>
+  <resources xsi:type="_librarypackage:Book" title="Falcon, prairie" authors="Aridatha Jurca" xCoordinate="675" yCoordinate="228" weight="586"/>
+  <resources xsi:type="_librarypackage:Book" title="Creeper, black-tailed tree" authors="Cordie Di Maggio" xCoordinate="383" yCoordinate="700" weight="211"/>
+</_librarypackage:Library>

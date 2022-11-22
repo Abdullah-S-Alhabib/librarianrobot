@@ -1,0 +1,378 @@
+/**
+ */
+package sa.edu.cs.librarianrobot.modeling.librarypackage.impl;
+
+import org.eclipse.emf.common.notify.Notification;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
+
+import sa.edu.cs.librarianrobot.modeling.librarypackage.Book;
+import sa.edu.cs.librarianrobot.modeling.librarypackage.LibrarypackagePackage;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Book</b></em>'.
+ * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link sa.edu.cs.librarianrobot.modeling.librarypackage.impl.BookImpl#getTitle <em>Title</em>}</li>
+ *   <li>{@link sa.edu.cs.librarianrobot.modeling.librarypackage.impl.BookImpl#getAuthors <em>Authors</em>}</li>
+ *   <li>{@link sa.edu.cs.librarianrobot.modeling.librarypackage.impl.BookImpl#getXCoordinate <em>XCoordinate</em>}</li>
+ *   <li>{@link sa.edu.cs.librarianrobot.modeling.librarypackage.impl.BookImpl#getYCoordinate <em>YCoordinate</em>}</li>
+ *   <li>{@link sa.edu.cs.librarianrobot.modeling.librarypackage.impl.BookImpl#getWeight <em>Weight</em>}</li>
+ * </ul>
+ *
+ * @generated
+ */
+public class BookImpl extends PublicationImpl implements Book {
+	/**
+	 * The default value of the '{@link #getTitle() <em>Title</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTitle()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String TITLE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getTitle() <em>Title</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getTitle()
+	 * @generated
+	 * @ordered
+	 */
+	protected String title = TITLE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getAuthors() <em>Authors</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAuthors()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String AUTHORS_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getAuthors() <em>Authors</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getAuthors()
+	 * @generated
+	 * @ordered
+	 */
+	protected String authors = AUTHORS_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getXCoordinate() <em>XCoordinate</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getXCoordinate()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int XCOORDINATE_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getXCoordinate() <em>XCoordinate</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getXCoordinate()
+	 * @generated
+	 * @ordered
+	 */
+	protected int xCoordinate = XCOORDINATE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getYCoordinate() <em>YCoordinate</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getYCoordinate()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int YCOORDINATE_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getYCoordinate() <em>YCoordinate</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getYCoordinate()
+	 * @generated
+	 * @ordered
+	 */
+	protected int yCoordinate = YCOORDINATE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getWeight() <em>Weight</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getWeight()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int WEIGHT_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getWeight() <em>Weight</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getWeight()
+	 * @generated
+	 * @ordered
+	 */
+	protected int weight = WEIGHT_EDEFAULT;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected BookImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return LibrarypackagePackage.Literals.BOOK;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getTitle() {
+		return title;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setTitle(String newTitle) {
+		String oldTitle = title;
+		title = newTitle;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LibrarypackagePackage.BOOK__TITLE, oldTitle, title));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getAuthors() {
+		return authors;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setAuthors(String newAuthors) {
+		String oldAuthors = authors;
+		authors = newAuthors;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LibrarypackagePackage.BOOK__AUTHORS, oldAuthors, authors));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public int getXCoordinate() {
+		return xCoordinate;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setXCoordinate(int newXCoordinate) {
+		int oldXCoordinate = xCoordinate;
+		xCoordinate = newXCoordinate;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LibrarypackagePackage.BOOK__XCOORDINATE, oldXCoordinate, xCoordinate));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public int getYCoordinate() {
+		return yCoordinate;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setYCoordinate(int newYCoordinate) {
+		int oldYCoordinate = yCoordinate;
+		yCoordinate = newYCoordinate;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LibrarypackagePackage.BOOK__YCOORDINATE, oldYCoordinate, yCoordinate));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public int getWeight() {
+		return weight;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setWeight(int newWeight) {
+		int oldWeight = weight;
+		weight = newWeight;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, LibrarypackagePackage.BOOK__WEIGHT, oldWeight, weight));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case LibrarypackagePackage.BOOK__TITLE:
+				return getTitle();
+			case LibrarypackagePackage.BOOK__AUTHORS:
+				return getAuthors();
+			case LibrarypackagePackage.BOOK__XCOORDINATE:
+				return getXCoordinate();
+			case LibrarypackagePackage.BOOK__YCOORDINATE:
+				return getYCoordinate();
+			case LibrarypackagePackage.BOOK__WEIGHT:
+				return getWeight();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case LibrarypackagePackage.BOOK__TITLE:
+				setTitle((String)newValue);
+				return;
+			case LibrarypackagePackage.BOOK__AUTHORS:
+				setAuthors((String)newValue);
+				return;
+			case LibrarypackagePackage.BOOK__XCOORDINATE:
+				setXCoordinate((Integer)newValue);
+				return;
+			case LibrarypackagePackage.BOOK__YCOORDINATE:
+				setYCoordinate((Integer)newValue);
+				return;
+			case LibrarypackagePackage.BOOK__WEIGHT:
+				setWeight((Integer)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case LibrarypackagePackage.BOOK__TITLE:
+				setTitle(TITLE_EDEFAULT);
+				return;
+			case LibrarypackagePackage.BOOK__AUTHORS:
+				setAuthors(AUTHORS_EDEFAULT);
+				return;
+			case LibrarypackagePackage.BOOK__XCOORDINATE:
+				setXCoordinate(XCOORDINATE_EDEFAULT);
+				return;
+			case LibrarypackagePackage.BOOK__YCOORDINATE:
+				setYCoordinate(YCOORDINATE_EDEFAULT);
+				return;
+			case LibrarypackagePackage.BOOK__WEIGHT:
+				setWeight(WEIGHT_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case LibrarypackagePackage.BOOK__TITLE:
+				return TITLE_EDEFAULT == null ? title != null : !TITLE_EDEFAULT.equals(title);
+			case LibrarypackagePackage.BOOK__AUTHORS:
+				return AUTHORS_EDEFAULT == null ? authors != null : !AUTHORS_EDEFAULT.equals(authors);
+			case LibrarypackagePackage.BOOK__XCOORDINATE:
+				return xCoordinate != XCOORDINATE_EDEFAULT;
+			case LibrarypackagePackage.BOOK__YCOORDINATE:
+				return yCoordinate != YCOORDINATE_EDEFAULT;
+			case LibrarypackagePackage.BOOK__WEIGHT:
+				return weight != WEIGHT_EDEFAULT;
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (title: ");
+		result.append(title);
+		result.append(", authors: ");
+		result.append(authors);
+		result.append(", xCoordinate: ");
+		result.append(xCoordinate);
+		result.append(", yCoordinate: ");
+		result.append(yCoordinate);
+		result.append(", weight: ");
+		result.append(weight);
+		result.append(')');
+		return result.toString();
+	}
+
+} //BookImpl

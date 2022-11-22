@@ -1,0 +1,54 @@
+
+package sa.edu.cs.librarianrobot.gui.io;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Collections;
+import java.util.Map;
+import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
+import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
+import sa.edu.cs.librarianrobot.modeling.librarypackage.Library;
+import sa.edu.cs.librarianrobot.modeling.librarypackage.LibrarypackagePackage;
+import org.eclipse.emf.common.util.URI;
+
+/**
+ * 
+ * @author faisal
+ */
+public final class LibraryWriter {
+
+	private final String PATH = "." + File.separatorChar + "models";
+	private static LibraryWriter INSTANCE;
+
+	private LibraryWriter() {
+	}
+
+	public static LibraryWriter getInstance() {
+		if (INSTANCE == null)
+			INSTANCE = new LibraryWriter();
+		return INSTANCE;
+	}
+
+	public void writeLibraryToXMI(Library library, String toFileName) {
+
+		LibrarypackagePackage.eINSTANCE.eClass();
+
+		Resource.Factory.Registry reg = Resource.Factory.Registry.INSTANCE;
+		Map<String, Object> m = reg.getExtensionToFactoryMap();
+		m.put("library", new XMIResourceFactoryImpl());
+
+		ResourceSet rs = new ResourceSetImpl();
+		rs.getResourceFactoryRegistry().getExtensionToFactoryMap().put("*", new XMIResourceFactoryImpl());
+		Resource res = rs.createResource(URI.createFileURI(PATH + File.separatorChar + toFileName));
+		res.getContents().add(library);
+
+		try {
+			res.save(Collections.EMPTY_MAP);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

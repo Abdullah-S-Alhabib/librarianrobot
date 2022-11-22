@@ -1,0 +1,19 @@
+@namespace(uri="sa.edu.cs.librarianrobot.librarymodel", prefix="_librarypackage")
+package librarypackage;
+
+class Library {
+	attr String[1] name;
+	val Publication[*] resources;
+}
+
+abstract class Publication {
+}
+
+class Book extends Publication {
+	attr String[1] title;
+	attr String[1] authors;
+	attr int xCoordinate;
+	attr int yCoordinate;
+	attr int weight;
+}
+

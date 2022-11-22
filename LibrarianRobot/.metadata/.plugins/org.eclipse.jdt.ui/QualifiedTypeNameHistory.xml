@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="jmetal.core.Problem"/>
+    <fullyQualifiedTypeName name="sa.edu.cs.librarianrobot.modeling.librarypackage.Book"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="javax.management.JMException"/>
+    <fullyQualifiedTypeName name="util.JMException"/>
+    <fullyQualifiedTypeName name="jmetal.core.SolutionSet"/>
+    <fullyQualifiedTypeName name="jmetal.util.Ranking"/>
+    <fullyQualifiedTypeName name="core.Operator"/>
+    <fullyQualifiedTypeName name="jmetal.qualityIndicator.QualityIndicator"/>
+    <fullyQualifiedTypeName name="jmetal.util.Distance"/>
+    <fullyQualifiedTypeName name="jmetal.util.comparators.CrowdingComparator"/>
+    <fullyQualifiedTypeName name="sa.edu.cs.librarianrobot.optimization.GeneticAlgorithm"/>
+    <fullyQualifiedTypeName name="sa.edu.cs.librarianrobot.gui.controllers.MainController"/>
+    <fullyQualifiedTypeName name="core.Algorithm"/>
+    <fullyQualifiedTypeName name="jmetal.util.Configuration"/>
+    <fullyQualifiedTypeName name="jmetal.metaheuristics.nsgaII.NSGAII"/>
+    <fullyQualifiedTypeName name="jmetal.util.JMException"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="jmetal.core.Solution"/>
+    <fullyQualifiedTypeName name="jmetal.core.Variable"/>
+    <fullyQualifiedTypeName name="jmetal.encodings.variable.Real"/>
+    <fullyQualifiedTypeName name="jmetal.encodings.variable.Permutation"/>
+    <fullyQualifiedTypeName name="jmetal.encodings.solutionType.RealSolutionType"/>
+    <fullyQualifiedTypeName name="jmetal.operators.crossover.TwoPointsCrossover"/>
+    <fullyQualifiedTypeName name="sa.edu.cs.librarianrobot.gui.io.DataSet"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+</qualifiedTypeNameHistroy>

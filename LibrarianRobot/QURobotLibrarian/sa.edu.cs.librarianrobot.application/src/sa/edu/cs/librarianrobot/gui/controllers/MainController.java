@@ -1,0 +1,111 @@
+package sa.edu.cs.librarianrobot.gui.controllers;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import sa.edu.cs.librarianrobot.gui.io.DataSet;
+import sa.edu.cs.librarianrobot.gui.io.LibraryReader;
+import sa.edu.cs.librarianrobot.gui.io.LibraryWriter;
+import sa.edu.cs.librarianrobot.modeling.librarypackage.Book;
+import sa.edu.cs.librarianrobot.modeling.librarypackage.Library;
+import sa.edu.cs.librarianrobot.modeling.librarypackage.Publication;
+import sa.edu.cs.librarianrobot.optimization.GA_Settings;
+import sa.edu.cs.librarianrobot.optimization.GeneticAlgorithm;
+import sa.edu.cs.librarianrobot.optimization.MyNSGAII;
+import jmetal.core.Algorithm;
+import jmetal.core.Solution;
+import jmetal.core.SolutionSet;
+import jmetal.encodings.variable.Permutation;
+import jmetal.util.JMException;
+
+public class MainController {
+	//maximum number of evaluations for the algorithm.
+	private static int maxEvaluations 		= 500;
+	//Input/output controller objects, in order to get the list of books and write results.
+	private static LibraryReader reader 	= LibraryReader.getInstance();
+	private static LibraryWriter writer 	= LibraryWriter.getInstance();
+	//list of books, each an object of class Book, which has methods to return each book's information.
+	private static List <Book> books;
+	private static FileWriter output;
+
+	public static void prepare(int max, DataSet inputData, FileWriter f) throws ClassNotFoundException, JMException, IOException {
+		maxEvaluations = max;
+		//Instantiate a library object
+		Library library = reader.loadLibraryFromXMI(inputData);
+		List<Book> books = new ArrayList<>();
+		
+		for(Publication p:library.getResources()) {
+			books.add((Book) p);
+		}
+		MainController.books = books;
+		
+		output = f;
+		
+		execute();
+
+	}
+	public static void execute() throws ClassNotFoundException, JMException, IOException {
+		GeneticAlgorithm ga = new GeneticAlgorithm(books,maxEvaluations);
+	    Algorithm algorithm = null;
+	    
+	    //data file for graphing.
+	    FileWriter data = new FileWriter("./Output/data_"+books.size()+"_books.txt");
+	    
+	    //strings to store data in, so that they're written in order.
+	    String distances = "", energies = "", times = "" ;
+		
+		output.write("\n------------\nNumber of books= "+ books.size()+"\n");
+	    
+	    for (int evaluations = 1000; evaluations<= 25000; evaluations+=2500) {
+	    	//this line exists to make the number of evaluations tidy, needed since i starts from 1000 instead of 0.
+	    	if (evaluations == 3500) {evaluations = 2500;}//if
+	    	maxEvaluations = evaluations;
+	    	output.write("\nMax Evaluations= "+maxEvaluations+"\n");
+	    	//create an object of GA_Settings to specify the NSGA II settings.
+	    	//Parameters: Problem name, problem object, population size and number of evaluations.
+		    GA_Settings nsgaiiSettings = new GA_Settings("GeneticProblem",ga,books.size(),maxEvaluations);
+			algorithm = nsgaiiSettings.configure();
+			
+			//execute the algorithm and record the time taken
+			long initTime = System.currentTimeMillis();
+			SolutionSet solutionset = algorithm.execute();
+			long estimatedTime = System.currentTimeMillis() - initTime;
+			
+			//print out the distance cost and the energy cost, respectively, separated by space.
+		    output.write(solutionset.get(0).getObjective(0)+" "+solutionset.get(0).getObjective(1)+"\n");
+		    output.write("Time= "+estimatedTime+" ms\n");
+		    //same output on the data file.
+		    distances +=solutionset.get(0).getObjective(0)+"\n";
+		    energies +=solutionset.get(0).getObjective(1)+"\n";
+		    times +=estimatedTime+"\n";
+		    
+		    //print out the order in which books are to be delivered from the top ranked solution, according to book coordinates
+		    int index= 0;
+		    Solution solution = solutionset.get(0);
+		    output.write("Coordinate pairs of solution:\n");
+		    for ( index= 0; index < ((Permutation)solution.getDecisionVariables()[0]).getLength(); index ++)
+		    {
+		    	//set the index to the i-th element of the permutation list
+		    	index = ((Permutation)solution.getDecisionVariables()[0]).vector_[index];
+		    	//print out the set of coordinates
+		    	output.write("["+books.get(index).getXCoordinate()+","+books.get(index).getYCoordinate()+"] ");
+		    }//for
+		    //add an empty line
+		    output.write("\n");
+	    }//for
+	    data.write(distances);
+	    data.write("\n"+energies);
+	    data.write("\n"+times);
+	    data.close();
+
+//		fin.printObjectivesToFile(output.getPath() + File.separatorChar + "FUN_");
+//		fin.printVariablesToFile(output.getPath() + File.separatorChar + "VAR_");
+//		fin.printFeasibleFUN(output.getPath() + File.separatorChar + "FFUN_");
+//		fin.printFeasibleVAR(output.getPath() + File.separatorChar + "FVAR_");
+		
+	}//execute
+
+}

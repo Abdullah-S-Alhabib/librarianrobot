@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+F:\github desktop\librarinrobot\LibrarianRobot\QURobotLibrarian\.metadata\.plugins\org.eclipse.jdt.core
+2560004125.index
+2373500367.index
+1390736937.index
+1865797976.index

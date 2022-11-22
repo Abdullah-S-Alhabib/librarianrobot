@@ -1,0 +1,41 @@
+package sa.edu.cs.librarianrobot.gui.controllers;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import sa.edu.cs.librarianrobot.gui.io.DataSet;
+import sa.edu.cs.librarianrobot.gui.io.LibraryReader;
+import sa.edu.cs.librarianrobot.gui.io.LibraryWriter;
+import sa.edu.cs.librarianrobot.modeling.librarypackage.Book;
+import sa.edu.cs.librarianrobot.modeling.librarypackage.Library;
+import sa.edu.cs.librarianrobot.modeling.librarypackage.Publication;
+
+public class MainController {
+	
+	private LibraryReader reader = LibraryReader.getInstance();
+	private LibraryWriter writer = LibraryWriter.getInstance();
+	
+	public void prepare(int size) {
+		
+		Library library = reader.loadLibraryFromXMI(DataSet.DS_100);
+		List<Book> books = new ArrayList<Book>();
+		
+		for(Publication p:library.getResources()) {
+			books.add((Book) p);
+		}
+		
+		Book b0 = books.get(0);
+		
+		// some work optimisation
+		
+		//.getResources().clear();
+		
+		//library.getResources().addAll(books);
+		
+		//writer.writeLibraryToXMI(library, "./models/latex.xmi");
+		
+		
+		
+	}
+
+}

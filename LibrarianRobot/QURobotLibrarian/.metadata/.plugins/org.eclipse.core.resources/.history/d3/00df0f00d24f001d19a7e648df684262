@@ -1,0 +1,39 @@
+/**
+ */
+package sa.edu.cs.librarianrobot.modeling.librarypackage.impl;
+
+import org.eclipse.emf.ecore.EClass;
+
+import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
+
+import sa.edu.cs.librarianrobot.modeling.librarypackage.LibrarypackagePackage;
+import sa.edu.cs.librarianrobot.modeling.librarypackage.Publication;
+
+/**
+ * <!-- begin-user-doc -->
+ * An implementation of the model object '<em><b>Publication</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ * @generated
+ */
+public abstract class PublicationImpl extends MinimalEObjectImpl.Container implements Publication {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected PublicationImpl() {
+		super();
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected EClass eStaticClass() {
+		return LibrarypackagePackage.Literals.PUBLICATION;
+	}
+
+} //PublicationImpl

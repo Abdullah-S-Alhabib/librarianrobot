@@ -1,0 +1,91 @@
+package sa.edu.cs.librarianrobot.optimization;
+
+
+import jmetal.core.Problem;
+import jmetal.core.Solution;
+import jmetal.util.JMException;
+
+import java.util.HashMap;
+import java.util.List;
+
+import jmetal.encodings.solutionType.PermutationSolutionType;
+import sa.edu.cs.librarianrobot.modeling.librarypackage.Book;
+
+
+public class GeneticAlgorithm extends Problem{
+	private static HashMap parameters = new HashMap();
+	private static List<Book> parent;
+
+//	public GeneticAlgorithm() throws ClassNotFoundException, JMException {
+//		problemGenerator(books);
+//		GeneticAlgorithm.chromosome = books;
+//	}
+
+	public  GeneticAlgorithm(List<Book> books, int maxEval) throws ClassNotFoundException, JMException {
+		
+		numberOfVariables_  = 1;
+	    numberOfObjectives_ = 2;
+	    numberOfConstraints_= 0;
+	    problemName_        = "GeneticProblem";
+	    solutionType_ = new PermutationSolutionType(this) ;
+	    
+
+	    //variableType_ = new Class[numberOfVariables_] ;
+	    length_       = new int[numberOfVariables_];
+	    this.parent = books;
+	    
+//	    Variable[] var = new Variable[2];
+//	    var[0]= new Real();
+//	    var[1]= new Int();
+	    
+	    
+	    
+	}
+
+	private static double[] fitnessFunction(int index) {
+		//cost[0] is the distance cost, whilst cost[1] is the weight cost.
+		
+		double []cost = new double[2];
+		double weightSum = 0;
+		
+		//TODO: weightSum value?.
+		Book prev = parent.get(0);
+		// initiate cost with first gene cost.
+		cost[0] = ((parent.get(0).getXCoordinate() - 0) + (parent.get(0).getYCoordinate() - 0));
+		cost[1] = parent.get(0).getWeight()*0.1;
+
+
+		for (Book i : parent) {
+			if (i == parent.get(0)) {
+				prev = i;
+				continue;
+			} else {
+				cost[0] += (i.getXCoordinate() - prev.getXCoordinate())
+						+ (i.getYCoordinate() - prev.getYCoordinate());
+				cost[1]+= weightSum*0.1;
+				weightSum -= i.getWeight();
+				prev = i;
+			}
+		}
+		return cost;
+	}
+
+	@Override
+	public void evaluate(Solution solution) throws JMException{
+
+		double [] fx = new double[2] ; // function values
+	    double [] fitness = new double[2];
+	    for (int i = 0 ; i < numberOfVariables_; i++)
+	    	{
+	    	fitness = fitnessFunction(i);
+	    	fx[0] += fitness[0];
+	    	fx[1] += fitness[1];
+	    	}
+
+	    solution.setObjective(0,fx[0]);
+	    solution.setObjective(1,fx[1]);
+
+
+	}
+
+}
